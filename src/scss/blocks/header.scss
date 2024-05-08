@@ -1,0 +1,38 @@
+@use '../mixins/responsive.scss' as *;
+
+.header {
+  text-align: center;
+  padding: 28px 24px 0 24px;
+
+  @include responsive(desktop) {
+    padding: 78px 63px 0 80px;
+  }
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 6.5rem;
+  align-items: center;
+
+  @include responsive(desktop) {
+    width: 63.375rem;
+    margin-inline: auto;
+  }
+}
+
+.header__image {
+  margin-bottom: 7.5rem;
+
+  @include responsive(desktop) {
+    width: 63.375rem;
+    margin-inline: auto;
+  }
+}

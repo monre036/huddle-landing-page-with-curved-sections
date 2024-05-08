@@ -1,0 +1,19 @@
+@use '../mixins/responsive.scss' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  margin-inline: auto;
+
+  @include responsive(desktop) {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.form__input {
+  height: 48px;
+  width: 100%;
+}

@@ -1,0 +1,57 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.button--pink {
+  border-radius: 1.25rem;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 11px 40px 11px 40px;
+
+  @include responsive(desktop) {
+    border-radius: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 25px 99px 25px 100px;
+  }
+
+  @include hover {
+    background-color: var(--color-hover);
+  }
+}
+
+.button--rectangle {
+  border-radius: 0.3125rem;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 12px 41px 12px 41px;
+  border: none;
+
+  @include hover {
+    background-color: var(--color-hover);
+  }
+}
+
+.button--ghost {
+  border-radius: 0.735rem;
+  color: var(--color-pink);
+  border: 0.0369rem solid var(--color-pink);
+  font-size: 0.5881rem;
+  padding: 5.29px 17.76px 5.24px 18.24px;
+
+  @include responsive(desktop) {
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    padding: 9px 30px 9px 31px;
+  }
+
+  @include hover {
+    color: var(--color-hover);
+    border: 0.0369rem solid var(--color-hover);
+  }
+}

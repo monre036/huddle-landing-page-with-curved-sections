@@ -1,0 +1,12 @@
+@use '../mixins/hover.scss' as *;
+
+.social-media {
+  display: flex;
+  gap: 17.33px;
+}
+
+.sm-icon {
+  @include hover {
+    background-color: var(--color-darkblue);
+  }
+}
